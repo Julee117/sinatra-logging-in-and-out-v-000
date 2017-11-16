@@ -7,7 +7,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    @user = User.create(username: params[:username], password: params[:password])
     erb :index
   end
 
